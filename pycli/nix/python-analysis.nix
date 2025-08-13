@@ -26,9 +26,9 @@ let
   pyrightCheck = makeCheck {
     name = "pyright";
     description = "Python type checking with pyright";
-    dependencies = with pkgs; [ pyright ];
-    command = "pyright src tests";
-    verboseCommand = "pyright src tests --verbose";
+    dependencies = with pkgs; [ ]; # nix develop provides the environment
+    command = "nix develop --command pyright src tests";
+    verboseCommand = "nix develop --command pyright src tests --verbose";
   };
 in
 createAnalysisPackage {

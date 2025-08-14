@@ -1,0 +1,27 @@
+{
+  "nodes": {
+    "hello-template": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755195118,
+        "narHash": "sha256-oZtTyITw6nWV9fzOwwDxMcBDevGTEHDsY43tC2y0JbE=",
+        "owner": "MatrixManAtYrService",
+        "repo": "hello-template",
+        "rev": "3ce7ab7dc5c1898107ef11035fb432199724a08c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MatrixManAtYrService",
+        "repo": "hello-template",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "hello-template": "hello-template"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

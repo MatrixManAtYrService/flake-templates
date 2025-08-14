@@ -1,10 +1,17 @@
 {
   description = "A Collection of Personal Nix Flake Templates";
 
-  outputs = { self, ... }: {
+  inputs = {
+    hello-template = {
+      url = "github:MatrixManAtYrService/hello-template";
+      flake = false;
+    };
+  };
+
+  outputs = { self, hello-template, ... }: {
     templates = {
       pycli = {
-        path = ./pycli;
+        path = hello-template;
         description = "A python CLI app";
       };
 

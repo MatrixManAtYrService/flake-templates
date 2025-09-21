@@ -16,5 +16,6 @@ python -c 'from hello.cli import message; print(message())'
 nix run
 uv run hello
 pytest
+chmod +x steps.sh
 ./steps.sh
 ```
